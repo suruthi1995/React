@@ -1,0 +1,13 @@
+import React, { useState , useEffect } from "react";
+
+function HooksComponent() {
+  const [count, setcount] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setcount(() => count + 1);
+    }, 3000);
+  });
+}
+     
+     
+export default HooksComponent;
